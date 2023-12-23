@@ -18,6 +18,7 @@
 	"dependencies": {
 		"ffi-napi": "4.0.3",
 		"ref-array-napi": "1.2.2",
+		"node-gyp": "^9.0.0",
 		"winreg": "1.2.4"
 	},
 	"devDependencies": {
