@@ -14,9 +14,7 @@
     "scripts": {
         "format": "npx prettier --write .",
         "build": "npm run build --workspace=lib",
-        "lint": "tsc --project tsconfig.json --noEmit && eslint .",
-        "prepack": "npm run build",
-        "prepare": "npm run build"
+        "lint": "tsc --project tsconfig.json --noEmit && eslint ."
     },
     "devDependencies": {
         "@chewbaccacookie/eslint-config": "^1.1.1",
