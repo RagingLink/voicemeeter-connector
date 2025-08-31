@@ -2,6 +2,9 @@
     "name": "root",
     "private": true,
     "type": "module",
+    "main": "lib/dist/index.js",
+    "module": "lib/dist/index.module.js",
+    "types": "lib/dist/index.d.ts",
     "description": "Root directory for the Voicemeeter Connector library. If you want to use the library, please install the package from the lib directory.",
     "repository": "https://github.com/ChewbaccaCookie/voicemeeter-connector",
     "workspaces": [
@@ -11,7 +14,9 @@
     "scripts": {
         "format": "npx prettier --write .",
         "build": "npm run build --workspace=lib",
-        "lint": "tsc --project tsconfig.json --noEmit && eslint ."
+        "lint": "tsc --project tsconfig.json --noEmit && eslint .",
+        "prepack": "npm run build",
+        "prepare": "npm run build"
     },
     "devDependencies": {
         "@chewbaccacookie/eslint-config": "^1.1.1",
